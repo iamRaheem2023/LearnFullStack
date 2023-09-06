@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+	<html>
+	<head>
+		<title> Audio & Video</title>
+	</head>
+	<body>
+	 <h1>video</h1>
+	 <video  id="myvideo" src="WhatsApp Video 2023-07-16 at 17.20.49.mp4" controls> 
+	
+	 	your browser doesnot not support video
+	 </video>
+	 <h1>Audio</h1>
+	 <audio id="myaudio"src="WhatsApp Ptt 2023-07-09 at 00.15.39.ogg" controls >
+	 	your browser does not support audio
+	 </audio>
+	 <div>
+	 	<button onclick="document.getElementById('myaudio').play()">Play</button>
+	 	<button onclick="document.getElementById('myaudio').pause()">Pause</button>
+	 	<button onclick="document.getElementById('myaudio').volume+=0.1">+Vol</button>
+	 	<button onclick="document.getElementById('myaudio').volume-=0.1">-Vol</button>
+	 </div>
+	 <script > 
+	 	var v = document.getElementById('myvideo');
+	 	v.play();
+	  </script>
+
+
+	</body>
+	</html>

@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title> Canvas </title>
+	<style> 
+		#mycanvas{
+			border: 1px #000 solid;
+			background: #f4f4f4;
+		}
+		#icanvas{
+			border: 1px #000 solid;
+			background: #f4f4f4;
+		}
+		#lcanvas{
+			border: 1px #000 solid;
+			background: #f4f4f4;
+		}
+
+	 </style>
+</head>
+<body>
+<canvas id="mycanvas"  width="300" height="300" ></canvas>
+<canvas id="icanvas"  width="300" height="300" ></canvas>
+<canvas id="lcanvas"  width="300" height="300" ></canvas>
+
+<script>
+	var c = document.getElementById('mycanvas');
+	var ctx = c.getContext('2d')
+	//REctacngle
+
+	ctx.fillStyle='red';
+	ctx.fillRect(75, 75,150,150);
+</script>
+<script>
+	var i = document.getElementById('icanvas');
+	var ctx = i.getContext('2d')
+	//REctacngle
+
+	ctx.fillStyle='red';
+	ctx.fillRect(10, 10,280,280);
+	ctx.fillStyle='blue';
+	ctx.fillRect(20, 20,260,260);
+	ctx.fillStyle='orange';
+	ctx.fillRect(30, 30,240,240);
+	ctx.fillStyle='green';
+	ctx.fillRect(40, 40,220,220);
+	ctx.fillStyle='black';
+	ctx.fillRect(50, 50,200,200);
+	ctx.fillStyle='white';
+	ctx.fillRect(60, 60,180,180);
+	ctx.fillStyle='pink';
+	ctx.fillRect(70, 70,160,160);
+</script>
+<script>
+	var l = document.getElementById('lcanvas');
+	var ntx = l.getContext('2d')
+	ntx.moveTo(10,10);
+	ntx.lineTo(290, 290);
+	ntx.stroke();
+	ntx.moveTo(20,10);
+	ntx.lineTo(290, 280);
+	ntx.stroke();
+	ntx.moveTo(30,10);
+	ntx.lineTo(290, 270);
+	ntx.stroke();
+	ntx.moveTo(40,10);
+	ntx.lineTo(290, 260);
+	ntx.stroke();
+	ntx.moveTo(50,10);
+	ntx.lineTo(290, 250);
+	ntx.stroke();
+	ntx.moveTo(60,10);
+	ntx.lineTo(290, 240);
+	ntx.stroke();
+	ntx.moveTo(70,10);
+	ntx.lineTo(290, 230);
+	ntx.stroke();
+	ntx.moveTo(80,10);
+	ntx.lineTo(290, 220);
+	ntx.stroke();
+	ntx.moveTo(90,10);
+	ntx.lineTo(290, 210);
+	ntx.stroke();
+	ntx.moveTo(100,10);
+	ntx.lineTo(290, 200);
+	ntx.stroke();
+	ntx.moveTo(110,10);
+	ntx.lineTo(290, 190);
+	ntx.stroke();
+	ntx.moveTo(120,10);
+	ntx.lineTo(290, 180);
+	ntx.stroke();
+	ntx.moveTo(290,10);
+	ntx.lineTo(10, 290);
+	ntx.stroke();
+	
+	
+	
+
+
+
+</script>
+
+</body>
+</html>

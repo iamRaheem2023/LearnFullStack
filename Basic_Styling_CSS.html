@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Basic Styling CSS</title>
+	<style>
+		body{
+			background:#f4f4f4;
+			font-family: arial;
+			line-height: 1.5em;
+		}
+		#Container{
+			border:1px #cccccc solid;
+			
+			padding: 0 20px 0 20px;
+			
+			width: 800px;
+			margin:30px auto;
+			overflow: hidden;
+		}
+
+		.emp{
+			color: red;
+			font-weight: bold;
+		}
+		.am{
+			color: blue;
+			font-weight: bold;
+			}
+		.side-a{
+			float:left ;
+			width: 50%;
+		}
+	</style>
+		
+</head>
+<body>
+<div id="Container">
+	<div class="side-a">
+	<h1>Welcome</h1>
+	<p> <span class="emp"> Installing Apache2 in Ubantu 20.04</span><br> 
+	$sudo apt update<br>
+	$sudo apt install apache2<br>
+	$ sudo systemctl is-active apache2<br>
+	$ sudo systemctl is-enabled apache2<br>
+	$ sudo systemctl status apache2<br>
+	$ sudo systemctl stop apache2      #stop apache2<br>
+	$ sudo systemctl start apache2     #start apache2<br>
+	$ sudo systemctl restart apache2   #restart apache2<br>
+	$ sudo systemctl reload apache2    #reload apache2<br>
+	$ sudo systemctl disable apache2   #disable apache2<br>
+	$ sudo systemctl enable apache2    #enable apache2<br>
+	$ sudo vim /etc/apache2/apache2.conf <br>
+	<span class="emp"> ServerName webserver.abdul.com</span><br>
+	$ sudo apache2ctl configtest<br>
+	$ sudo systemctl restart apache2<br>
+	<span class="emp"> Ubantu firewall config</span><br>
+	$ sudo ufw allow http<br>
+	$ sudo ufw allow https<br>
+	$ sudo ufw reload<br>
+	<span class="emp"> get ip </span><br>
+	$ curl ifconfig.co<br>
+	OR<br>
+	$ curl ifconfig.me<br>
+	OR<br>
+	$ curl icanhazip.com<br>
+	 </p>
+	</div>
+	<div class="side-b">
+	<h1>Hello</h1>
+	<p><span class="emp">Setting Up Virtual Hosts in Ubuntu 20.04</span><br>
+     $ ls /var/www/html/ <br>
+     $ sudo mkdir -p /var/www/html/linuxdesktop.info <br>
+     $ sudo chown www-data:www-data -R /var/www/html/linuxdesktop.info<br>
+	 $ sudo chmod 775 -R /var/www/html/linuxdesktop.info<br>
+	 $ sudo vim /var/www/html/linuxdesktop.info/index.html <span class="am"> here create a file </span><br>
+	 <span class="emp"> <br> "<"VirtualHost *:80 ">"" <br>
+    	ServerName www.linuxdesktop.info <br>
+	ServerAlias linuxdesktop.info <br>
+	DocumentRoot /var/www/html/linuxdesktop.info <br>
+	ErrorLog /var/log/apache2/linuxdesktop.info_error.log<br>
+	CustomLog  /var/log/apache2/linuxdesktop.info_access.log combined<br>
+	"<"/VirtualHost">"</span><br>
+		$sudo a2ensite linuxdesktop.info.conf<br>
+		$ sudo systemctl reload apache2<br>
+	<span class="am"> go to web and see the result </span> <br>
+
+	</p>
+	</div>
+	
+
+
+</div>
+</body>
+</html>

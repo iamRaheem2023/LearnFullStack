@@ -1,0 +1,15 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title> My_First_Webpage_CA</title>
+</head>
+<body>
+<p> 
+This my first web page in canada on 2023-07-04.july -4. 
+3.00pm 
+.Tuesday .
+I usually dont have college this day. lets begin the journey of becomiing web developer. 
+Dont give up!!!
+</p> 
+</body>
+</html>
